@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<img src="abort.png" alt="abort" 
+		onabort="alert('load image abort')" 
+		onerror="alert('load image error')"
+		onload="alert('load image load')"
+		height="200px">
+	<img src="abort1.png" alt="abort" 
+		onerror="alert('load image error')">
+	
+	<form id="form">
+	  	<input type="text" placeholder="text input">
+	  	<input type="password" placeholder="password">
+	</form>
+
+	<input type="text" onkeydown="keyevent()"
+		onkeypress="keyevent()"
+		onkeyup="keyevent()" placeholder="key event">
+	<script>
+		let form = document.getElementById("form");
+		form.addEventListener("focus", function( event ) {
+		  	event.target.style.background = "pink";    
+		}, true);
+		form.addEventListener("blur", function( event ) {
+		  	event.target.style.background = "";    
+		}, true);
+		form.addEventListener("focusin", function( event ) {
+		  	event.target.style.background = "pink";    
+		}, true);
+		form.addEventListener("focusout", function( event ) {
+		  	event.target.style.background = "";    
+		}, true);
+		function keyevent() {
+			console.log(event)
+		}
+	</script>
+
+</body>
+</html>
+
+<!-- 
+===onabort
+===onblur
+oncancel
+oncanplay
+oncanplaythrough
+onchange
+onclick
+onclose
+oncontextmenu
+oncuechange
+ondblclick
+ondrag
+ondragend
+ondragenter
+ondragleave
+ondragover
+ondragstart
+ondrop
+ondurationchange
+onemptied
+onended
+===onerror
+===onfocus
+oninput
+oninvalid
+===onkeydown
+===onkeypress
+===onkeyup
+===onload
+onloadeddata
+onloadedmetadata
+onloadstart
+===`onmousedown`
+===`onmouseenter`
+===`onmouseleave`
+===`onmousemove`
+===`onmouseout`
+===`onmouseover`
+===`onmouseup`
+===`onmousewheel`
+onpause
+onplay
+onplaying
+onprogress
+onratechange
+onreset
+onresize
+onscroll
+onseeked
+onseeking
+onselect
+onshow
+onstalled
+onsubmit
+onsuspend
+ontimeupdate
+ontoggle
+onvolumechange
+onwaiting
+click
+focus
+blur 
+-->

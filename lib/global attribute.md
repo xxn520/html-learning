@@ -8,7 +8,7 @@
 2. `aria-*` 属性。
 3. 事件相关属性。
 
-![](../img/全局属性.png)
+![](../img/global attribute.png)
 
 ### `accesskey`
 
